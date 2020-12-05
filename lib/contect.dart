@@ -45,12 +45,20 @@ class _MyHomePageState extends State<MyHomePage> {
           Text("I am a student",style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),),
           SizedBox( height: 40.0),
 
-//          Padding(
-//            padding: const EdgeInsets.only(top: 10),
-//            child: RaisedButton(onPressed: HomeScreen, color: Colors.cyan,
-//              child: Text('Go Home'),
-//            ),
-//          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 10),
+            child:RaisedButton(
+                child: Text('Go Home'),
+                color: Colors.cyan,
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => homepage()),
+                  );
+                }
+
+            ),
+          ),
 
           Padding(
             padding: const EdgeInsets.only(top: 10),

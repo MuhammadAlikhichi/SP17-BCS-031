@@ -26,7 +26,7 @@ class _splashscreenState extends State<splashscreen> {
       appBar: AppBar(
         backgroundColor: Colors.blueGrey,
       ),
-      backgroundColor: Colors.deepOrange,
+      backgroundColor: Colors.grey,
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -52,7 +52,7 @@ class _splashscreenState extends State<splashscreen> {
               'SP17-BCS-031',
               style: TextStyle(
                 fontSize: 30.0,
-                color: Colors.black,
+                color: Colors.white,
                 fontWeight: FontWeight.bold,
 
               ),

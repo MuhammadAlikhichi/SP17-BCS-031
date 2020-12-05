@@ -14,7 +14,7 @@ class _homepageState extends State<homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.pinkAccent,
+        backgroundColor: Colors.cyan,
         title: Text('Dice Game'),
       ),
       body: Center(
@@ -23,7 +23,7 @@ class _homepageState extends State<homepage> {
           children: [
             RaisedButton(
               child: Text('simple Level'),
-                color: Colors.pinkAccent,
+                color: Colors.cyan,
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -36,6 +36,7 @@ class _homepageState extends State<homepage> {
               height: 20,
             ),
             RaisedButton(
+              
               child: Text('Hard Level'),
 
 
@@ -45,7 +46,7 @@ class _homepageState extends State<homepage> {
             ),
             RaisedButton(
                 child: Text('Exit'),
-                color: Colors.pinkAccent,
+                color: Colors.cyan,
                 onPressed: () {
                  exit(0);
                 }

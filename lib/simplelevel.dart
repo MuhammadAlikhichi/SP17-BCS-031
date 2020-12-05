@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
 import 'drawer.dart';
+import 'home.dart';
 
 void main() {
   runApp(simplemode());
@@ -120,7 +121,7 @@ class _DicepageState extends State<Dicepage> {
               ),
 
               Padding(
-                padding: const EdgeInsets.only(top: 30),
+                padding: const EdgeInsets.only(top: 10),
                 child: RaisedButton(
                   color: Colors.cyan ,
                   onPressed: changeImage,
@@ -128,7 +129,21 @@ class _DicepageState extends State<Dicepage> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 30),
+                padding: const EdgeInsets.only(top: 10),
+                child:RaisedButton(
+                    child: Text('Go Home'),
+                    color: Colors.cyan,
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => homepage()),
+                      );
+                    }
+
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 10),
                 child: RaisedButton(
                   child: Text('Exit'),
                   color: Colors.cyan ,
