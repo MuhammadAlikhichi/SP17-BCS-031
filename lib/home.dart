@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:cardapp/simplelevel.dart';
 import 'package:flutter/material.dart';
 import 'simplelevel.dart';
@@ -36,6 +38,17 @@ class _homepageState extends State<homepage> {
             RaisedButton(
               child: Text('Hard Level'),
 
+
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            RaisedButton(
+                child: Text('Exit'),
+                color: Colors.pinkAccent,
+                onPressed: () {
+                 exit(0);
+                }
 
             ),
           ],

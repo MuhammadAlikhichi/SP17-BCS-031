@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
@@ -123,6 +125,16 @@ class _DicepageState extends State<Dicepage> {
                   color: Colors.cyan ,
                   onPressed: changeImage,
                   child: Text('Roll Dice'),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 30),
+                child: RaisedButton(
+                  child: Text('Exit'),
+                  color: Colors.cyan ,
+                  onPressed: () {
+                    exit(0);
+                  },
                 ),
               ),
               // Padding(
