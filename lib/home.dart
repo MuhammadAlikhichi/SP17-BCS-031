@@ -4,6 +4,7 @@ import 'package:cardapp/simplelevel.dart';
 import 'package:flutter/material.dart';
 import 'simplelevel.dart';
 import 'contect.dart';
+import 'hardlevel.dart';
 class homepage extends StatefulWidget {
   @override
   _homepageState createState() => _homepageState();
@@ -13,6 +14,7 @@ class _homepageState extends State<homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey,
       appBar: AppBar(
         backgroundColor: Colors.cyan,
         title: Text('Dice Game'),
@@ -38,6 +40,13 @@ class _homepageState extends State<homepage> {
             RaisedButton(
               
               child: Text('Hard Level'),
+                color: Colors.cyan,
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => hard()),
+                  );
+                }
 
 
             ),

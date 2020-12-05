@@ -64,7 +64,7 @@ class _DicepageState extends State<Dicepage> {
           title: Text(
             'Simple Level',
             style: TextStyle(
-                color: Colors.white,
+                color: Colors.grey,
                 fontWeight: FontWeight.bold,
                 fontSize: 30.0),
           ),
