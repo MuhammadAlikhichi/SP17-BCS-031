@@ -1,8 +1,5 @@
-//import 'TwoLevel.dart';
 import 'package:flutter/material.dart';
-//import 'ContactUs.dart';
-
-
+import 'contect.dart';
 class MainDrawer extends StatelessWidget {
   const MainDrawer({Key key}) : super(key: key);
 
@@ -58,6 +55,19 @@ class MainDrawer extends StatelessWidget {
         title: Text("Your Profile"),
       ),
       /////////////////////////////////////////////////
+      ListTile(
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => MyContact()),
+          );
+        },
+        leading: Icon(
+          Icons.inbox,
+          color: Colors.black,
+        ),
+        title: Text("Contact Us"),
+      ),
       ListTile(
         onTap: () {},
         leading: Icon(

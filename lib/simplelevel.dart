@@ -1,12 +1,7 @@
-import 'dart:io';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
 import 'drawer.dart';
-import 'home.dart';
-
-import 'package:flutter/services.dart';
 
 void main() {
   runApp(simplemode());
